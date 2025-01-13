@@ -29,15 +29,11 @@ app.use(expressLayouts);
 app.set('layout', './layouts/main'); 
 app.set('view engine', 'ejs');
 
-// create basisc route -- get req
-app.get('/', function(req, res){
-    const locals = {
-        title: 'NodeJs Notes', 
-        description: 'Free NodeJs Notes App'
-    }
+// Routes
+app.use('/', require('./server/routes/index')); // goes to main route
 
-    res.render('index', locals); 
-});
+
+
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
