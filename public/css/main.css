@@ -1,0 +1,69 @@
+:root {
+    --background-color: rgb(11, 216, 11);
+    --bs-primary-rgb: rgb(242, 255, 5); 
+}
+
+body {
+    font-family: 'Caveat', sans-serif;  /* downloaded font followed by fallback */
+    background-color: var(--background-color); /* gives same background as root */
+    color: var(--bs-primary-rgb);  /*same color as above */
+    font-weight: 300;
+    font-size: 1.2rem;
+    background-image:url ()
+
+}
+
+h1,h2,h3,h4,h5,h6 {                   /* change style for headings*/
+    font-family: 'Caveat', cursive;  
+    font-weight: 800;
+}
+
+.contianer-fluid-custom {       /*style for class container/ creating own custom container */ 
+max-width: 1600px;
+} 
+
+
+/* buttons */ 
+.btn {
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   border-radius: 2rem; 
+}
+
+
+a.btn.btn-primary {
+    background: var(--background-color); 
+    --bs-btn-color: var(--bs-primary-rgb);
+    --bs-btn-border-color: var(--bs-primary-rgb);
+    --bs-btn-hover-color: var(--background-color);
+    --bs-btn-hover-bg: var(--bs-primary-rgb);
+    --bs-btn-hover-border-color: var(--bs-primary-rgb);
+    --bs-btn-focus-shadow-rgb:  var(--bs-primary-rgb);
+    --bs-btn-active-color: var(--bs-primary-rgb);
+    --bs-btn-active-bg: var(--bs-primary-rgb);
+    --bs-btn-active-border-color: var(--bs-primary-rgb);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--bs-primary-rgb);
+   
+    --bs-btn-disabled-border-color: var(--bs-primary-rgb);
+    --bs-gradient: none;
+}
+
+
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary-rgb);
+    --bs-btn-border-color: var(--bs-primary-rgb);
+    --bs-btn-hover-color: var(--background-color);
+    --bs-btn-hover-bg: var(--bs-primary-rgb);
+    --bs-btn-hover-border-color: var(--bs-primary-rgb);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--bs-primary-rgb);
+    --bs-btn-active-bg: var(--bs-primary-rgb);
+    --bs-btn-active-border-color: var(--bs-primary-rgb);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--bs-primary-rgb);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--bs-primary-rgb);
+    --bs-gradient: none;
+}
